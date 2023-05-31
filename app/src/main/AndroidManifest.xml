@@ -4,6 +4,7 @@
 
     <uses-feature android:name="android.hardware.camera" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -15,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GloApp"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.activities.webview.NewsWebView"
+            android:exported="false" />
         <activity
             android:name=".ui.activities.result.skintype.SkinType"
             android:exported="false" />

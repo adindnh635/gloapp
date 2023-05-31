@@ -20,6 +20,7 @@
         app:fabCradleMargin="12dp"
         app:fabCradleVerticalOffset="8dp"
         app:fabCradleRoundedCornerRadius="24dp"
+        app:hideOnScroll="true"
         android:layout_gravity="bottom">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -38,10 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add"
-        app:layout_anchor="@id/bottomAppBar"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+    app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="top|center"
         android:contentDescription="@string/skin_test" />
-
-
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
