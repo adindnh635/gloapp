@@ -9,4 +9,6 @@
     <string name="skin_type">SKIN TYPE</string>
     <string name="skin_disease">SKIN DISEASE</string>
     <string name="halaman_utama">Halaman Utama</string>
+    <string name="failed_capture">Failed to capture photo.</string>
+    <string name="failed_camera">Failed to open camera</string>
 </resources>

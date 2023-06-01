@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commitNow
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.salugan.gloapp.databinding.ActivityMainBinding
+import com.salugan.gloapp.ui.activities.camera.CameraActivity
 import com.salugan.gloapp.ui.activities.result.undertone.UndertoneActivity
 import com.salugan.gloapp.ui.fragments.profile.ProfileFragment
 import com.salugan.gloapp.ui.fragments.timeline.TimelineFragment
@@ -112,7 +113,7 @@ class MainActivity : AppCompatActivity() {
         val skinDisease = bottomSheetView.findViewById<CardView>(R.id.skinDiseaseCheck)
 
         undertone.setOnClickListener {
-            startActivity(Intent(this@MainActivity, UndertoneActivity::class.java))
+            startActivity(Intent(this@MainActivity, CameraActivity::class.java))
         }
 
         skinType.setOnClickListener {
