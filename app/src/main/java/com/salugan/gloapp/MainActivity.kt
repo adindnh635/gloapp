@@ -21,6 +21,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.salugan.gloapp.databinding.ActivityMainBinding
 import com.salugan.gloapp.ui.activities.camera.CameraActivity
 import com.salugan.gloapp.ui.activities.result.undertone.UndertoneActivity
+import com.salugan.gloapp.ui.activities.store.StoreActivity
 import com.salugan.gloapp.ui.fragments.profile.ProfileFragment
 import com.salugan.gloapp.ui.fragments.timeline.TimelineFragment
 
@@ -71,7 +72,8 @@ class MainActivity : AppCompatActivity() {
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 return if (menuItem.itemId == R.id.mStore) {
-                    Toast.makeText(this@MainActivity, "Store", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@MainActivity, StoreActivity::class.java)
+                    startActivity(intent)
                     true
                 } else true
             }
